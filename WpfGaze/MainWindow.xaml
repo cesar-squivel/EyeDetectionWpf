@@ -1,0 +1,15 @@
+﻿<Window x:Class="WebcamSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Webcam Sample" WindowState="Maximized" ResizeMode="NoResize" Background="#FF444444" WindowStyle="None" BorderBrush="#FFFDFDFD">
+    <Grid>
+        <Canvas>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Start Webcam" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="20" Click="StartWebcam_Click"/>
+                <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="20" Click="Exit_Click"/>
+            </StackPanel>
+            <Image x:Name="webcamImage" Width="640" Height="480" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Fill"/>
+        </Canvas>
+    </Grid>
+</Window>
+
